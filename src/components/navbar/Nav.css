@@ -2,8 +2,6 @@
   padding: 5px 20px;
   border: none;
   font-size: 20px;
-  border: 1px solid rgb(220, 216, 216);
-  border-radius: 10px;
 }
 
 input {
@@ -11,6 +9,10 @@ input {
   margin-left: 20px;
   outline: none;
   font-size: 20px;
+  border: 1px solid rgb(178, 176, 176);
+  width: 90%;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .fa-arrow-left {
@@ -19,6 +21,12 @@ input {
 
 .fa-arrow-left:hover {
     color: blueviolet;
+}
+
+@media (max-width: 676px) {
+    input {
+        width: 80%;
+    }
 }
 
 @media (max-width: 410px) {
