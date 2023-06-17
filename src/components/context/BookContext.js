@@ -21,14 +21,14 @@ export const BookProvider = ({ children }) => {
   const currReading = bookData.filter(
     (book) => book.category === "Currently Reading"
   );
-  const alreadyRead = bookData.filter((book) => book.category === "Read");
+  const alreadyRead = bookData.filter((book) => book.category === "Already Read");
   const wantToRead = bookData.filter(
     (book) => book.category === "Want to Read"
   );
 
   return (
     <BookContext.Provider
-      value={{ currReading, alreadyRead, wantToRead, changeCategoryHandler }}
+      value={{ currReading, alreadyRead, wantToRead, changeCategoryHandler, bookData }}
     >
       {children}
     </BookContext.Provider>
