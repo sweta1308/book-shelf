@@ -1,12 +1,24 @@
+import { useBook } from "../context/BookContext";
 import "./BookCard.css";
 
 export const BookCard = ({ bookObj }) => {
-  const { book, author, image } = bookObj;
+  const { id, book, author, image, category } = bookObj;
+  const { changeCategoryHandler } = useBook();
   return (
     <>
       <div className="book">
         <img src={image} alt="book" />
-        <i className="fa-solid fa-caret-down arrow-down"></i>
+        <select
+          value={category}
+          onChange={(e) => changeCategoryHandler(id, e.target.value)}
+          style={{ display: "block" }}
+        >
+          <option disabled>Move to...</option>
+          <option value="Currently Reading">Currently reading</option>
+          <option value="Read">Already Read</option>
+          <option value="Want to Read">Want to Read</option>
+          <option value="">None</option>
+        </select>
         <h3>{book}</h3>
         <h3 className="author">{author}</h3>
       </div>
