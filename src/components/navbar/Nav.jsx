@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import "./Nav.css";
-import { useFilter } from "../context/SearchFilterContext";
+import { useFilter } from "../../context/SearchFilterContext";
 
 export const NavBar = () => {
   const navigate = useNavigate();

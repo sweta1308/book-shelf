@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import { books } from "../../data/data";
+import { books } from "../data/data";
 
 const BookContext = createContext();
 

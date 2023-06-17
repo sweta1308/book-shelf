@@ -1,5 +1,5 @@
 import { BookCard } from "../components/bookcard/BookCard";
-import { useFilter } from "../components/context/SearchFilterContext";
+import { useFilter } from "../context/SearchFilterContext";
 import "./Pages.css";
 
 export const Search = () => {

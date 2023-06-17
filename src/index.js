@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import { BookProvider } from "./components/context/BookContext";
-import { SearchFilterProvider } from "./components/context/SearchFilterContext";
+import { BookProvider } from "./context/BookContext";
+import { SearchFilterProvider } from "./context/SearchFilterContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

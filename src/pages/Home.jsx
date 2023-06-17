@@ -1,5 +1,5 @@
 import { BookCard } from "../components/bookcard/BookCard";
-import { useBook } from "../components/context/BookContext";
+import { useBook } from "../context/BookContext";
 import "./Pages.css";
 
 export const Home = () => {

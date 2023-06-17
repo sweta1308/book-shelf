@@ -1,4 +1,4 @@
-import { useBook } from "../context/BookContext";
+import { useBook } from "../../context/BookContext";
 import "./BookCard.css";
 
 export const BookCard = ({ bookObj }) => {
