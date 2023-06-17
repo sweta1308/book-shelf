@@ -17,7 +17,7 @@ export const BookCard = ({ bookObj }) => {
           <option value="Currently Reading">Currently reading</option>
           <option value="Already Read">Already Read</option>
           <option value="Want to Read">Want to Read</option>
-          <option value="">None</option>
+          <option value="None">None</option>
         </select>
         <h3>{book}</h3>
         <h3 className="author">{author}</h3>
