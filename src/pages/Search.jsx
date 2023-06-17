@@ -11,7 +11,7 @@ export const Search = () => {
           <div key={book.id}>
             <BookCard bookObj={book} />
           </div>
-        )) : <h1>Enter Book or Author Name...</h1>}
+        )) : <h1>Enter Book or Author or Category Name...</h1>}
       </div>
     </>
   );
