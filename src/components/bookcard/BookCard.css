@@ -1,5 +1,6 @@
 .book {
   margin: 0 20px;
+  position: relative;
 }
 
 img {
@@ -9,18 +10,6 @@ img {
 
 .author {
   color: rgb(137, 136, 136);
-}
-
-.arrow-down {
-  background-color: rgb(38, 167, 38);
-  padding: 12px 15px;
-  font-size: 20px;
-  border-radius: 50%;
-  color: white;
-  cursor: pointer;
-  position: relative;
-  right: 30px;
-  bottom: 5px;
 }
 
 @media (max-width: 630px) {
