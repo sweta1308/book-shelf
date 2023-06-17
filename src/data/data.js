@@ -4,7 +4,7 @@ export const books = [
     book: "Harry Potter",
     author: "J.K. Rowling",
     genre: "Fantasy",
-    category: "Read",
+    category: "Already Read",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUrifH1GcTas5LWMATm_nhMtXhE0vHnSs4mQ&usqp=CAU",
   },
@@ -13,7 +13,7 @@ export const books = [
     book: "To Kill a Mockingbird",
     author: "Harper Lee",
     genre: "Classic",
-    category: "Read",
+    category: "Already Read",
     image:
       "https://media.glamour.com/photos/56e1f3c4bebf143c52613c0b/master/w_1600%2Cc_limit/entertainment-2016-02-next-main.jpg",
   },
@@ -22,7 +22,7 @@ export const books = [
     book: "The Great Gatsby",
     author: "F. Scott Fitzgerald",
     genre: "Classic",
-    category: "Read",
+    category: "Already Read",
     image:
       "https://m.media-amazon.com/images/I/61z0MrB6qOS._AC_UF1000,1000_QL80_.jpg",
   },
@@ -31,7 +31,7 @@ export const books = [
     book: "Pride and Prejudice",
     author: "Jane Austen",
     genre: "Classic",
-    category: "Read",
+    category: "Already Read",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTvddXsG9RB4a4Kz6vHhQ4tKFeIT5lHbGHZw&usqp=CAU",
   },
