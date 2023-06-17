@@ -7,28 +7,32 @@ export const BookProvider = ({ children }) => {
   const [bookData, setBookData] = useState(books);
 
   const changeCategoryHandler = (bookId, bookCategory) => {
-    let updatedData = bookData;
-    if (bookCategory === "") {
-      updatedData = bookData.filter((book) => book.id !== bookId);
-    } else {
-      updatedData = bookData.map((book) =>
-        book.id === bookId ? { ...book, category: bookCategory } : book
-      );
-    }
-    setBookData(updatedData)
+    let updatedData = bookData.map((book) =>
+      book.id === bookId ? { ...book, category: bookCategory } : book
+    );
+
+    setBookData(updatedData);
   };
 
   const currReading = bookData.filter(
     (book) => book.category === "Currently Reading"
   );
-  const alreadyRead = bookData.filter((book) => book.category === "Already Read");
+  const alreadyRead = bookData.filter(
+    (book) => book.category === "Already Read"
+  );
   const wantToRead = bookData.filter(
     (book) => book.category === "Want to Read"
   );
 
   return (
     <BookContext.Provider
-      value={{ currReading, alreadyRead, wantToRead, changeCategoryHandler, bookData }}
+      value={{
+        currReading,
+        alreadyRead,
+        wantToRead,
+        changeCategoryHandler,
+        bookData,
+      }}
     >
       {children}
     </BookContext.Provider>
