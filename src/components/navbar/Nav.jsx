@@ -4,11 +4,14 @@ import { useFilter } from "../context/SearchFilterContext";
 
 export const NavBar = () => {
   const navigate = useNavigate();
-  const { inputData, searchHandler } = useFilter();
+  const { inputData, searchHandler, returnHandler } = useFilter();
   return (
     <>
       <div className="navbar">
-        <i className="fa-solid fa-arrow-left" onClick={() => navigate("/")}></i>
+        <i
+          className="fa-solid fa-arrow-left"
+          onClick={returnHandler}
+        ></i>
         <input
           placeholder="Search for books..."
           className="search"
