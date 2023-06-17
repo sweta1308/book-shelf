@@ -10,7 +10,6 @@ export const BookProvider = ({ children }) => {
     let updatedData = bookData.map((book) =>
       book.id === bookId ? { ...book, category: bookCategory } : book
     );
-
     setBookData(updatedData);
   };
 
