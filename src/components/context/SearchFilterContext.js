@@ -14,7 +14,10 @@ export const SearchFilterProvider = ({ children }) => {
       : books.filter(
           (book) =>
             book.book.toLowerCase().includes(inputData.toLowerCase().trim()) ||
-            book.author.toLowerCase().includes(inputData.toLowerCase().trim())
+            book.author
+              .toLowerCase()
+              .includes(inputData.toLowerCase().trim()) ||
+            book.genre.toLowerCase().includes(inputData.toLowerCase().trim())
         );
 
   return (
